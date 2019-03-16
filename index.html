@@ -1,0 +1,466 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+<title>Practica </title>
+<!-- CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+<!-- Tema opcional -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+<!-- JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+<script type="text/javascript">
+function criba2()
+{
+limpiar();	
+var div2 = document.getElementById("derecho");
+var maximo=prompt ("Introduzca el máximo a analizar mayor o igual a 20:");
+if(maximo >= 20)
+{
+var primos =[];
+
+for (var i=0;i<maximo;i++) {
+    primos[i]=1;
+}
+for (var i=2;i<maximo;i++) {
+    for (var j=2*i;j<maximo;j+=i) {
+        primos[j]=0;
+    }
+}
+////////////////////////////////
+//Muestar los primos que quedan (todavía iguales a 1)
+//vamos a acumularlos en esta cadena
+var cad="[";
+for (var i=0;i<maximo;i++) {
+    if (primos[i]==1) {
+        if (i!=0) {
+            cad+=", ";
+        }
+        cad+=i;
+var boton = document.createElement("button");
+boton.type = "boton";
+boton.style ="width:80px; height:50px; margin:5px";
+boton.innerText = i;
+div2.appendChild(boton);
+    }
+}
+cad+="]";
+// y la mostramos
+alert ("Primos: " + cad);
+}else
+{
+alert("debe ser mayor o igual a 20");	
+}
+}
+
+function criba3()
+{
+limpiar();	
+var div2 = document.getElementById("derecho");
+var maximo=prompt ("Introduzca el máximo a analizar mayor o igual a 20:");
+if(maximo >= 20)
+{
+var primos =[];
+
+for (var i=0;i<maximo;i++) {
+    primos[i]=1;
+}
+for (var i=3;i<maximo;i++) {
+    for (var j=3*i;j<maximo;j+=i) {
+        primos[j]=0;
+    }
+}
+////////////////////////////////
+//Muestar los primos que quedan (todavía iguales a 1)
+//vamos a acumularlos en esta cadena
+var cad="[";
+for (var i=0;i<maximo;i++) {
+    if (primos[i]==1) {
+        if (i!=0) {
+            cad+=", ";
+        }
+        cad+=i;
+var boton = document.createElement("button");
+boton.type = "boton";
+boton.style ="width:80px; height:50px; margin:5px";
+boton.innerText = i;
+div2.appendChild(boton);
+    }
+}
+cad+="]";
+// y la mostramos
+alert ("Primos: " + cad);
+}else
+{
+alert("debe ser mayor o igual a 20");	
+}
+}
+
+
+function criba4()
+{
+limpiar();	
+var div2 = document.getElementById("derecho");
+var maximo=prompt ("Introduzca el máximo a analizar mayor o igual a 20:");
+if(maximo >= 20)
+{
+var primos =[];
+
+for (var i=0;i<maximo;i++) {
+    primos[i]=1;
+}
+for (var i=4;i<maximo;i++) {
+    for (var j=4*i;j<maximo;j+=i) {
+        primos[j]=0;
+    }
+}
+////////////////////////////////
+//Muestar los primos que quedan (todavía iguales a 1)
+//vamos a acumularlos en esta cadena
+var cad="[";
+for (var i=0;i<maximo;i++) {
+    if (primos[i]==1) {
+        if (i!=0) {
+            cad+=", ";
+        }
+        cad+=i;
+var boton = document.createElement("button");
+boton.type = "boton";
+boton.style ="width:80px; height:50px; margin:5px";
+boton.innerText = i;
+div2.appendChild(boton);
+    }
+}
+cad+="]";
+// y la mostramos
+alert ("Primos: " + cad);
+}else
+{
+alert("debe ser mayor o igual a 20");	
+}
+}
+
+
+function criba5()
+{
+limpiar();	
+var div2 = document.getElementById("derecho");
+var maximo=prompt ("Introduzca el máximo a analizar mayor o igual a 20:");
+if(maximo >= 20)
+{
+var primos =[];
+
+for (var i=0;i<maximo;i++) {
+    primos[i]=1;
+}
+for (var i=5;i<maximo;i++) {
+    for (var j=5*i;j<maximo;j+=i) {
+        primos[j]=0;
+    }
+}
+////////////////////////////////
+//Muestar los primos que quedan (todavía iguales a 1)
+//vamos a acumularlos en esta cadena
+var cad="[";
+for (var i=0;i<maximo;i++) {
+    if (primos[i]==1) {
+        if (i!=0) {
+            cad+=", ";
+        }
+        cad+=i;
+var boton = document.createElement("button");
+boton.type = "boton";
+boton.style ="width:80px; height:50px; margin:5px";
+boton.innerText = i;
+div2.appendChild(boton);
+    }
+}
+cad+="]";
+// y la mostramos
+alert ("Primos: " + cad);
+}else
+{
+alert("debe ser mayor o igual a 20");	
+}
+}
+
+
+function criba6()
+{
+limpiar();	
+var div2 = document.getElementById("derecho");
+var maximo=prompt ("Introduzca el máximo a analizar mayor o igual a 20:");
+if(maximo >= 20)
+{
+var primos =[];
+
+for (var i=0;i<maximo;i++) {
+    primos[i]=1;
+}
+for (var i=6;i<maximo;i++) {
+    for (var j=6*i;j<maximo;j+=i) {
+        primos[j]=0;
+    }
+}
+////////////////////////////////
+//Muestar los primos que quedan (todavía iguales a 1)
+//vamos a acumularlos en esta cadena
+var cad="[";
+for (var i=0;i<maximo;i++) {
+    if (primos[i]==1) {
+        if (i!=0) {
+            cad+=", ";
+        }
+        cad+=i;
+var boton = document.createElement("button");
+boton.type = "boton";
+boton.style ="width:80px; height:50px; margin:5px";
+boton.innerText = i;
+div2.appendChild(boton);
+    }
+}
+cad+="]";
+// y la mostramos
+alert ("Primos: " + cad);
+}else
+{
+alert("debe ser mayor o igual a 20");	
+}
+}
+
+function criba7()
+{
+limpiar();	
+var div2 = document.getElementById("derecho");
+var maximo=prompt ("Introduzca el máximo a analizar mayor o igual a 20:");
+if(maximo >= 20)
+{
+var primos =[];
+
+for (var i=0;i<maximo;i++) {
+    primos[i]=1;
+}
+for (var i=7;i<maximo;i++) {
+    for (var j=7*i;j<maximo;j+=i) {
+        primos[j]=0;
+    }
+}
+////////////////////////////////
+//Muestar los primos que quedan (todavía iguales a 1)
+//vamos a acumularlos en esta cadena
+var cad="[";
+for (var i=0;i<maximo;i++) {
+    if (primos[i]==1) {
+        if (i!=0) {
+            cad+=", ";
+        }
+        cad+=i;
+var boton = document.createElement("button");
+boton.type = "boton";
+boton.style ="width:80px; height:50px; margin:5px";
+boton.innerText = i;
+div2.appendChild(boton);
+    }
+}
+cad+="]";
+// y la mostramos
+alert ("Primos: " + cad);
+}else
+{
+alert("debe ser mayor o igual a 20");	
+}
+}
+function criba8()
+{
+limpiar();	
+var div2 = document.getElementById("derecho");
+var maximo=prompt ("Introduzca el máximo a analizar mayor o igual a 20:");
+if(maximo >= 20)
+{
+var primos =[];
+
+for (var i=0;i<maximo;i++) {
+    primos[i]=1;
+}
+for (var i=8;i<maximo;i++) {
+    for (var j=8*i;j<maximo;j+=i) {
+        primos[j]=0;
+    }
+}
+////////////////////////////////
+//Muestar los primos que quedan (todavía iguales a 1)
+//vamos a acumularlos en esta cadena
+var cad="[";
+for (var i=0;i<maximo;i++) {
+    if (primos[i]==1) {
+        if (i!=0) {
+            cad+=", ";
+        }
+        cad+=i;
+var boton = document.createElement("button");
+boton.type = "boton";
+boton.style ="width:80px; height:50px; margin:5px";
+boton.innerText = i;
+div2.appendChild(boton);
+    }
+}
+cad+="]";
+// y la mostramos
+alert ("Primos: " + cad);
+}else
+{
+alert("debe ser mayor o igual a 20");	
+}
+}
+
+function criba9()
+{
+limpiar();	
+var div2 = document.getElementById("derecho");
+var maximo=prompt ("Introduzca el máximo a analizar mayor o igual a 20:");
+if(maximo >= 20)
+{
+var primos =[];
+
+for (var i=0;i<maximo;i++) {
+    primos[i]=1;
+}
+for (var i=9;i<maximo;i++) {
+    for (var j=9*i;j<maximo;j+=i) {
+        primos[j]=0;
+    }
+}
+////////////////////////////////
+//Muestar los primos que quedan (todavía iguales a 1)
+//vamos a acumularlos en esta cadena
+var cad="[";
+for (var i=0;i<maximo;i++) {
+    if (primos[i]==1) {
+        if (i!=0) {
+            cad+=", ";
+        }
+        cad+=i;
+var boton = document.createElement("button");
+boton.type = "boton";
+boton.style ="width:80px; height:50px; margin:5px";
+boton.innerText = i;
+div2.appendChild(boton);
+    }
+}
+cad+="]";
+// y la mostramos
+alert ("Primos: " + cad);
+}else
+{
+alert("debe ser mayor o igual a 20");	
+}
+}
+
+function limpiar()
+
+
+{
+
+   document.getElementById("derecho").innerHTML="";
+
+}
+</script>
+
+<style type="text/css">
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+button.celda
+{
+height: 40px;
+width: 200px;
+text-align: center;
+margin-bottom:0.3em;
+margin-top: 5px;
+margin-right: 0.3em;
+}
+#izquierdo
+{
+width:200px;
+height: 800px;
+float:left;
+margin-left:5px;
+
+display:inline-block;
+}
+#derecho
+{
+width:80%;
+height: 100%;
+padding:10px;
+margin-top:5px;
+margin-left:5px;
+float:left;
+display: inline-block;
+vertical-align: top;
+}
+</style>
+</head>
+<body onload="criba()">
+<div id="izquierdo">
+<button class="celda btn btn-primary" onclick="criba2()">Multiplos de 2</button>
+<button class="celda btn btn-primary" onclick="criba3()">Multiplos de 3</button>
+<button class="celda btn btn-primary" onclick="criba4()">Multiplos de 4</button>
+<button class="celda btn btn-primary" onclick="criba5()">Multiplos de 5</button>
+<button class="celda btn btn-primary" onclick="criba6()">Multiplos de 6</button>
+<button class="celda btn btn-primary" onclick="criba7()">Multiplos de 7</button>
+<button class="celda btn btn-primary" onclick="criba8()">Multiplos de 8</button>
+<button class="celda btn btn-primary" onclick="criba9()">Multiplos de 9</button>
+<button class="celda btn btn-primary">Numeros Primos</button>
+<button class="celda btn btn-primary" onclick="limpiar()">Limpiar</button>
+</div>
+
+<div id="derecho">
+
+
+	</div>
+
+
+</body>
+
+</html>
